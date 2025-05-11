@@ -1,0 +1,4 @@
+meta {
+    name = "My Filter"
+    description = "Baby's first filter"
+}
