@@ -2,3 +2,24 @@ meta {
     name = "My Filter"
     description = "Baby's first filter"
 }
+
+/*@ define:module:my_first_module
+name: My First module
+subtitle: A short phrase
+description: |
+    A long description; shown when the module is expanded.
+
+    Can use line breaks, including [links](http://google.com),
+    - lists
+
+    # and various heading sizes
+
+/*@ define:input:my_first_module
+type: stringlist
+label: Items to hide
+*/
+#define VAR_ITEMS_TO_HIDE ["monkfish"]
+
+if (name:VAR_ITEMS_TO_HIDE) {
+    hidden = true;
+}
